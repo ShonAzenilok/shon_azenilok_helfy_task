@@ -35,12 +35,12 @@ app.get('/api/tasks', (req, res) => {
 app.post('/api/tasks', (req, res) => {
     try {
         const tasks = getAllTasksFromFile();
-        title,description,priority = req.body
+        const { title, description, priority } = req.body;
 
         // very basic input validation
         if (!title || !description || !priority) {
-            return res.status(400).json({ 
-                message: "Validation Error: missing data" 
+            return res.status(400).json({
+                message: "Validation Error: missing data"
             });
         }
 
@@ -57,6 +57,7 @@ app.post('/api/tasks', (req, res) => {
         saveTasksToFile(tasks);
         res.status(201).json(newTask);
     } catch (err) {
+        console.error("DETAILED ERROR:", err);
         res.status(500).json({ message: "Could not save task" });
     }
 });

@@ -1,0 +1,39 @@
+/* Helfy Colors */
+body {
+  background: linear-gradient(135deg, #00d084, #7bdcb5);
+  min-height: 100vh;
+  color: #333;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 40px 20px;
+}
+
+.main-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.content-card {
+  background: white;
+  border-radius: 20px;
+  padding: 40px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+}
+
+.app-header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.app-header h1 {
+  color: #00d084;
+  margin: 0;
+  font-size: 32px;
+  font-weight: 600;
+}
+
+.app-header .subtitle {
+  color: #888;
+  margin-top: 8px;
+  font-size: 14px;
+}
