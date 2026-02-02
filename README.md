@@ -43,3 +43,11 @@ i personally think that the infite carousel dosent fit for this style of Applica
 - readme and testing 15 minutes
 
 ## Screenshots
+
+![Screenshot 1](screenshots/Screenshot%202026-02-02%20154613.png)
+
+![Screenshot 2](screenshots/Screenshot%202026-02-02%20154638.png)
+
+![Screenshot 3](screenshots/Screenshot%202026-02-02%20154651.png)
+
+![Screenshot 4](screenshots/Screenshot%202026-02-02%20154700.png)
