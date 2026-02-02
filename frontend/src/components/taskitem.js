@@ -1,7 +1,7 @@
 import React from 'react';
 import '../styles/taskitem.css';
 
-function TaskItem({ task, onToggle, onDelete }) {
+function TaskItem({ task, onToggle, onDelete, onEdit }) {
 
 
     return (
@@ -17,6 +17,7 @@ function TaskItem({ task, onToggle, onDelete }) {
                 <button className="btn-toggle" onClick={() => onToggle(task.id)}>
                     {task.completed ? 'Undo' : 'Done'}
                 </button>
+                <button className="btn-edit" onClick={() => onEdit(task)}>Edit</button>
                 <button className="btn-delete" onClick={() => onDelete(task.id)}>Delete</button>
             </div>
         </div>

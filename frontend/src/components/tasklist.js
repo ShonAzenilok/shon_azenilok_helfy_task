@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import TaskItem from './taskitem';
 import '../styles/tasklist.css';
 
-function TaskList({ tasks, onToggle, onDelete }) {
+function TaskList({ tasks, onToggle, onDelete, onEdit }) {
     const [isPaused, setIsPaused] = useState(false);
 
-    // Only animate if 4+ tasks
+    // Only animate if 3+ tasks
     const shouldAnimate = tasks.length >= 3;
     const duration = tasks.length * 10;
 
@@ -30,6 +30,7 @@ function TaskList({ tasks, onToggle, onDelete }) {
                                 task={task}
                                 onToggle={onToggle}
                                 onDelete={onDelete}
+                                onEdit={onEdit}
                             />
                         ))}
                     </div>

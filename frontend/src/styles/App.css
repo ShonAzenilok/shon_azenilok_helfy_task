@@ -37,3 +37,106 @@ body {
   margin-top: 8px;
   font-size: 14px;
 }
+
+/* Modal */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-box {
+  background: white;
+  padding: 30px;
+  border-radius: 16px;
+  text-align: center;
+  max-width: 400px;
+}
+
+.modal-box p {
+  font-size: 16px;
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
+.modal-buttons {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.btn-cancel {
+  background: #f0f0f0;
+  color: #666;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-cancel:hover {
+  background: #e0e0e0;
+}
+
+.btn-confirm {
+  background: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-confirm:hover {
+  background: #e04040;
+}
+
+/* Edit Modal */
+.edit-modal {
+  width: 350px;
+}
+
+.edit-modal h3 {
+  margin: 0 0 20px 0;
+  color: #333;
+}
+
+.edit-modal input,
+.edit-modal select {
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+.edit-modal input:focus,
+.edit-modal select:focus {
+  outline: none;
+  border-color: #00d084;
+}
+
+.btn-save {
+  background: #00d084;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.btn-save:hover {
+  background: #00b872;
+}

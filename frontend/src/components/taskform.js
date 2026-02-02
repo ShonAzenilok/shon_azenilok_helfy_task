@@ -10,6 +10,7 @@ function TaskForm({ onAddTask }) {
         e.preventDefault();
 
         if (!title.trim()) return;
+        if (!desc.trim()) return;
 
         onAddTask({
             title: title.trim(),
@@ -47,6 +48,7 @@ function TaskForm({ onAddTask }) {
                     value={desc}
                     onChange={(e) => setDesc(e.target.value)}
                     placeholder="Add a description"
+                    required
                     className="input-desc"
                 />
                 <button type="submit">Add Task</button>
