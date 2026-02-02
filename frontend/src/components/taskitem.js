@@ -7,7 +7,10 @@ function TaskItem({ task, onToggle, onDelete }) {
     return (
         <div className={`task-card ${task.completed ? 'completed' : ''}`}>
             <div className="task-content">
-                <h3 className="task-title">{task.title}</h3>
+                <div className="task-header">
+                    <h3 className="task-title">{task.title}</h3>
+                    <span className={`task-priority priority-${task.priority}`}>{task.priority}</span>
+                </div>
                 <p className="task-desc">{task.description}</p>
             </div>
             <div className="task-actions">

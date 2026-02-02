@@ -46,7 +46,7 @@ function TaskForm({ onAddTask }) {
                 <input
                     value={desc}
                     onChange={(e) => setDesc(e.target.value)}
-                    placeholder="Add a description (optional)"
+                    placeholder="Add a description"
                     className="input-desc"
                 />
                 <button type="submit">Add Task</button>

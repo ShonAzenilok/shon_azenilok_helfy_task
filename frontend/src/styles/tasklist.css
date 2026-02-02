@@ -1,39 +1,33 @@
 /* Task List */
 .task-list-container {
     margin-top: 20px;
+    overflow: hidden;
 }
 
 .task-carousel {
     width: 100%;
-    overflow-x: auto;
+    overflow: hidden;
 }
-
-
 
 .carousel-track {
     display: flex;
     gap: 20px;
     padding: 15px 0;
     width: fit-content;
+    animation: scroll linear infinite;
 }
 
-/* Scrollbar styling */
-.task-carousel::-webkit-scrollbar {
-    height: 8px;
+.carousel-track.paused {
+    animation-play-state: paused;
 }
 
-.task-carousel::-webkit-scrollbar-track {
-    background: #f0f0f0;
-    border-radius: 4px;
-}
-
-.task-carousel::-webkit-scrollbar-thumb {
-    background: #00d084;
-    border-radius: 4px;
-}
-
-.task-carousel::-webkit-scrollbar-thumb:hover {
-    background: #00b872;
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .empty-state {
